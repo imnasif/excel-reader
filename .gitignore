@@ -1,5 +1,3 @@
-*.class
-
 # Package Files #
 *.jar
 *.war
@@ -7,3 +5,7 @@
 
 # Build Folder #
 target/
+
+#IDE #
+/.idea/
+/excel-reader.iml

@@ -1,10 +1,11 @@
-package me.nasif.excelreader;
+package me.nasif.excelreader.readers;
 
-import java.util.List;
 import me.nasif.excelreader.model.Chocolate;
 import org.apache.poi.ss.usermodel.Row;
 
-public class ChoclatesFileReader extends ExcelFileReader {
+import java.util.List;
+
+public class ChocolatesFileReader extends ExcelFileReader {
 
     public static final int START_ROW = 1;
     public static final int END_ROW = 3;
@@ -14,7 +15,7 @@ public class ChoclatesFileReader extends ExcelFileReader {
 
     private final List<Chocolate> list;
 
-    public ChoclatesFileReader(String fileUrl, List<Chocolate> list) {
+    public ChocolatesFileReader(String fileUrl, List<Chocolate> list) {
         super(fileUrl);
         this.list = list;
     }
